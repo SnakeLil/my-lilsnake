@@ -1,0 +1,217 @@
+body, html {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-weight: bold;
+  font-size: 12px;
+  font-family: SimHei;
+}
+.hhh{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: SimHei;
+}
+.ppp{
+  font-size: 10px;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed ;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+}
+/*背景容器*/
+.plotpic{
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  
+}
+/*背景容器*/
+
+/* 文字容器 */
+.cont1{
+  padding:75px 40px 30px 40px ;
+
+  position: absolute;
+  background-color: rgb(247, 239, 239,0.5);
+  top:13%;
+  left: 10%;
+  width: 50%;
+  height: 60%;
+  border-radius: 5rem;
+  border: 1px solid black;
+  overflow: auto;
+  scrollbar-width: thin; /* Firefox支持的属性 */
+  -ms-overflow-style: none; /* IE和Edge支持的属性 */
+}
+/* 文字容器 */
+.cont1::-webkit-scrollbar {
+  display: none; /* Chrome、Safari和Opera隐藏滚动条 */
+}
+/* logoleft 左上角logo*/
+.logoleft{
+  position: absolute;
+  width: 9%;
+  top:7%;
+  left: 9%;
+}
+/* logoleft 左上角logo*/
+.pic{
+
+  display: flex;
+  height: 100%;
+  width: 100%;
+  
+}
+
+/* 熊大光头强，top：0，right：0 */
+.pic1{
+  height: 100vh;
+  top: 0%;
+  right: 0;
+  position: absolute;
+  width: 56%;
+}
+.middle{
+  
+  margin: 30px 0 30px 0;
+  background-color: rgb(255, 255, 255);
+
+  height: 700px;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.paper{
+  margin: 0 30px ;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(213, 233, 184) ;
+  width: 18%;
+  height: 620px;
+  border-radius: 0 0 5rem 5rem;
+}
+.pictur{
+  width: 100%;
+  height: 45%;
+}
+.wenzi{
+  padding: 10px 35px 10px 35px;
+}
+.biaoti{
+  font-family: STFangsong;
+  font-size: 14px;
+}
+.dd{
+  font-family: SimHei;
+  font-size: 12px;
+
+}
+.logo{
+  position:absolute;
+  top:10%;
+  right:2%;
+  width: 9%;
+  z-index: 9999;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  margin-left: auto;
+}
+nav ul {
+
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+
+  margin-top: 10px;
+  font-size: 14px;
+  margin-left: 55px;
+  margin-right: 35px;
+  
+}
+
+nav ul li:hover {
+
+
+  
+
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  
+}
+nav ul li a:hover {
+
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 15px; /* 调整填充以扩大背景 */
+  text-decoration: none;
+  color: #000; /* 设置鼠标悬停时的颜色，与默认颜色保持一致 */
+}
+/* 响应式设计 - 当屏幕宽度小于768px时应用不同的样式 */
+@media (max-width: 790px) {
+  header {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    position: absolute;
+    width: 10%;
+    top:20%;
+    right: 3%;
+    margin: 10px 0;
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .header-right {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 5px;
+  }
+}
+
+/* 响应式设计 - 当屏幕宽度大于768px时应用不同的样式 */
+/* 响应式设计 - 当屏幕宽度大于768px时应用不同的样式 */
+@media (min-width: 790px) {
+.logo {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  width: 9%;
+  z-index: 9999;
+}
+}

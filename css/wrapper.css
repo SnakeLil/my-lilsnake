@@ -1,0 +1,31 @@
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .image {
+    width: 20%;
+    height: 50%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .wrapper:hover .image {
+    transform: translateX(10%) scale(0.8);
+  }
+  
+  .wrapper .image:focus {
+    outline: none;
+  }
+  
+  .wrapper .image.active {
+    transform: translateX(0) scale(1);
+  }
+  

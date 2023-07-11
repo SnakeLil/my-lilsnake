@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>熊出没</title>
+    <link rel="stylesheet" type="text/css" href="css/pic.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+
+            <span></span>
+            <div> </div>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul class="menu">
+
+                    <li><a href="index.html" data-target="home">首页</a></li>
+                    <li><a href="plot.html" data-target="author">剧情简介</a></li>
+                    <li><a href="character.html" data-target="character">角色介绍</a></li>
+                    <li><a href="movies.html" data-target="movies">大电影</a></li>
+                    <li><a href="pic.html" data-target="guestbook">图片欣赏</a></li>
+                </ul>
+
+
+        </div>
+    </header>
+    <!-- 背景-->
+    <div class="">
+        <img class="plotpic" src="image/picback.png" alt="">
+
+    </div>
+
+    <!-- 中间图片 -->
+    <div class="mid">
+        <div class="imgcow">
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (4).jpg" alt=""></div>
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (23).jpg" alt=""></div>
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (16).jpg" alt=""></div>
+        </div>
+        <div class="imgcow">
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (8).jpg" alt=""></div>
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (13).jpg" alt=""></div>
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (31).jpg" alt=""></div>
+        </div>
+        <div class="imgcow">
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (10).jpg" alt=""></div>
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (5).jpg" alt=""></div>
+            <div class="imgcont"><img class="imgin" src="image/熊出没 (12).jpg" alt=""></div>
+
+        </div>
+        <img src="image/圆角矩形 1.png" alt="">
+
+    </div>
+
+
+    <script>
+        const imgElements = document.querySelectorAll('.imgin');
+
+        imgElements.forEach((img) => {
+            img.addEventListener('click', () => {
+                img.classList.add('active');
+                setTimeout(() => {
+                    img.classList.remove('active');
+                }, 2000);
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 其他页面内容 -->
+
+</body>
+
+</html>

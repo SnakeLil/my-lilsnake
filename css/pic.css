@@ -1,0 +1,192 @@
+body, html {
+    width: 100%;
+  
+    margin: 0;
+    padding: 0;
+  }
+ 
+  header {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 999;
+  }
+  /*背景*/
+.plotpic{
+    position: relative;
+    width: 100%;
+
+    min-height: 100vh;
+    
+  }
+  /*背景*/
+
+  /* 最外层div */
+  .mid{
+    background-color: rgb(233, 216, 193,0);
+    display:flex ;
+    top:0;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120vh;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+
+  }
+
+  /* 一行图片 */
+  .imgcow{
+    
+    
+    width: 90%;
+    height: 33vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255,0);
+
+
+  }
+  /* 图片白色容器 */
+  .imgcont{
+    border: 2px solid rgb(156, 156, 156);
+    height: 33vh;
+    width: 50vh;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 22px 22px ;
+  }
+  /* 设置图片大小 使其保持在容器内 */
+  .imgin{
+
+    height: 100%;
+    width: 100%;
+    transition: margin 2s, height 2s,width 2s;
+
+  }
+  .imgin.active {
+    z-index: 999999999;
+    margin: -22px -22px;
+    height: 124%;
+    width: 114%;
+
+
+  }
+  .imgin:hover{
+    
+  }
+  .pictur{
+    width: 100%;
+    height: 45%;
+  }
+  
+  
+
+  .logo{
+    position:absolute;
+    top:10%;
+    right:2%;
+    width: 9%;
+    z-index: 9999;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right {
+    margin-left: auto;
+  }
+  nav ul {
+  
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul li {
+  
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 55px;
+    margin-right: 35px;
+    
+  }
+  
+  nav ul li:hover {
+  
+  
+    
+  
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    
+  }
+  nav ul li a:hover {
+  
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px 15px; /* 调整填充以扩大背景 */
+    text-decoration: none;
+    color: #000; /* 设置鼠标悬停时的颜色，与默认颜色保持一致 */
+  }
+  /* 响应式设计 - 当屏幕宽度小于768px时应用不同的样式 */
+  @media (max-width: 790px) {
+    header {
+      height: auto;
+      padding: 10px 20px;
+    }
+  
+    .logo {
+      position: absolute;
+      width: 10%;
+      top:20%;
+      right: 3%;
+      margin: 10px 0;
+    }
+  
+    .header-left {
+      display: none;
+    }
+  
+    .header-right {
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul {
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin: 5px;
+    }
+  }
+  
+  /* 响应式设计 - 当屏幕宽度大于768px时应用不同的样式 */
+  /* 响应式设计 - 当屏幕宽度大于768px时应用不同的样式 */
+  @media (min-width: 790px) {
+  .logo {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 9%;
+    z-index: 9999;
+  }
+  }
